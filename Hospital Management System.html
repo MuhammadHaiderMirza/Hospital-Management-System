@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+                alert("----------- HOSPITAL MANAGEMENT SYSTEM ----------");
+                
+                var pName, pNo, fName, mrNo, date, nicNo, pWard, pDisease, dName, dTime, fee;
+                pName = ["Ahmed", "Ali", "Zohaib"];
+                fName = ["Kashif", "Fareed", "Asim"];
+                mrNo = [123, 456, 789];
+                date = ["1/12/18", "3/12/18", "7/12/18"];
+                nicNo = [100029932, 3453458793, 1231236571];
+                pWard = ["Ward1", "Ward2", "Ward3"];
+                pDisease = ["Flu", "Fever", "BP"];
+                dName = ["Asad", "Usman", "Fasih"];
+                dTime = ["12:00pm", "1:00pm", "2:00pm"];
+                fee = "Rs300";
+                
+                 pNo = prompt("Enter Patient Number (Ahmed, Ali, Zohaib)", "eg: 1, 2, 3");
+
+                if(pNo == 1 || pNo == 2 || pNo == 3){
+                    document.write("Patient Name = "+pName[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("Father Name = "+fName[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("MR Number = "+mrNo[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("Date = "+date[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("NIC Number = "+nicNo[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("Patient Ward = "+pWard[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("Disease = "+pDisease[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("Doctor Name = "+dName[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("Doctor Time = "+dTime[pNo-1]);
+                    document.write("<br/><br/>");
+                    document.write("Fee = "+fee);
+                }
+                else{
+                    document.write("Plz! Enter correct number.");
+                }
+
+                
+                </script>
+</body>
+</html>
